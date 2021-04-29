@@ -100,7 +100,7 @@ def fetchPage(page):
 def main():
   global CURRENT_PAGE, TOTAL_PAGES
 
-  while CURRENT_PAGE < TOTAL_PAGES or TOTAL_PAGES is -1:
+  while CURRENT_PAGE < TOTAL_PAGES or TOTAL_PAGES == -1:
     fetchPage(CURRENT_PAGE)
     CURRENT_PAGE += 1
 
